@@ -1,0 +1,1 @@
+    print(f"{salario3:.2f}")
