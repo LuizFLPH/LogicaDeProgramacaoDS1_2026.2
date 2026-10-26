@@ -8,7 +8,7 @@ e retorne o valor com 15% de desconto à vista aplicado.
 """
 
 # TODO: Desenvolva a expressão lambda e teste-a abaixo:
-valor = lambda c : c * 0.15
+valor = lambda c : c - (c * 0.15)
 c = int(input("Digite o valor do produto: "))
 desconto = valor(c)
-print(desconto)
+print(f"O valr será {desconto}")

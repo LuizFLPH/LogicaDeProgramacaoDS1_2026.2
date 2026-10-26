@@ -13,7 +13,8 @@ total_de_inscritos = 0
 def inscrever_aluno (quantidade):
     global total_de_inscritos
     total_de_inscritos = total_de_inscritos + quantidade
-
+pass
+quantidade = int(input("Quantos aluno foram escritos: "))
 print("Antes: ", total_de_inscritos)
-inscrever_aluno(5)
+inscrever_aluno(quantidade)
 print("Depois: ", total_de_inscritos)
