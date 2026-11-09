@@ -10,3 +10,8 @@ ENUNCIADO:
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+lista = ["Ryan Mesquita Damasceno"]
+lista.append(input("Digite o nome de outro monitor"))
+lista.append(input("Digite o nome de outro monitor"))
+lista.insert(0, "Sophia Sousa Silva")
+print(lista)
