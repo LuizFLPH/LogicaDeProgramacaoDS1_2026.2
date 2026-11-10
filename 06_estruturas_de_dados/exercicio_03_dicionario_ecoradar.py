@@ -8,9 +8,9 @@ Leia uma matrícula via terminal e exiba a função correspondente cadastrada.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
-dicionario = [
-    input("Digite o seu nome: "): input("Digite o seu cargo: "),
-    input("Digite o seu nome: "): input("Digite o seu cargo: "),
-    input("Digite o seu nome: "): input("Digite o seu cargo: ")
-]
+dicionario = {
+    input("Insira o dia da sua matricula: "): input("Insira o seu cargo:"),
+    input("Insira o dia da sua matricula: "): input("Insira o seu cargo:"),
+    input("Insira o dia da sua matricula: "): input("Insira o seu cargo:")
+}
 print(dicionario)

@@ -9,3 +9,10 @@ exibindo uma mensagem explicativa sobre imutabilidade.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+cidades = ("Tianguá", "São Benedito")
+try:
+    cidades[1] = "Ubajara"
+except:
+    print("Erro: O termo (Ubajara) não pode ser definido")
+    print("Explicação: Uma tupla não pode ser alterada apos a sua criação")
+    print("Solução: Insira o termo (Ubajara) dentro da tupla diretamente")
