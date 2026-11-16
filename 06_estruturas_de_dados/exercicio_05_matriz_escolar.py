@@ -10,20 +10,21 @@ Percorra a matriz, calcule a média de cada um e exiba:
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
-from ast import type_ignore
+aluno = []
+for i in range (0,3):
+    nome = str(input("Insira o nome do aluno: "))
+    nota1 = float(input("Insira a primeira nota do aluno: "))
+    nota2 = float(input("Insira a segunda nota do aluno: "))
 
+    aluno.append([nome, nota1, nota2])
 
-alunos = [
-    [input("Insira o nome do aluno: ")], [float(input("Insira a primera nota do aluno: "))], [float(input("Insira a segunda nota do aluno: "))],
-    [input("Insira o nome do aluno: ")], [float(input("Insira a primera nota do aluno: "))], [float(input("Insira a segunda nota do aluno: "))],
-    [input("Insira o nome do aluno: ")], [float(input("Insira a primera nota do aluno: "))], [float(input("Insira a segunda nota do aluno: "))]
-]
-for linha in alunos:
-    nome = alunos[0]
-    nota1 = alunos[1]
-    nota2 = alunos[2]
+for linha in aluno:
+    nome = linha[0]
+    nota1 = linha[1]
+    nota2 = linha[2]
     media = (nota1 + nota2) / 2
     if media >= 6:
-        print(f"Parabens {nome} você esta aprovado!!, a sua média final foi de {media}")
+        situacao = "Aprovado"
     else:
-        print(f"{nome} infelizmente você foi reprovado, estude mais da proxima!!")
+        situacao = "Reprovado" 
+    print(f"Aluno: {nome} | Média: {media} | Situação: {situacao} / Prova Final")
